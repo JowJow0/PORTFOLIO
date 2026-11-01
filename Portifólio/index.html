@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Jonathan Ferreira - Desenvolvedor de Software Jr e criador de soluções digitais.">
+    <meta name="author" content="Jonathan Ferreira">
+
+    <title>Jonathan Ferreira | Portfólio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="stars"></div>
+        <div class="grid"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="#inicio" class="logo">Jonathan<span>.dev</span></a>
+
+            <nav class="desktop-nav" aria-label="Navegação principal">
+                <a href="#sobre" data-i18n="nav.about">Sobre</a>
+                <a href="#skills" data-i18n="nav.skills">Skills</a>
+                <a href="#servicos" data-i18n="nav.services">Serviços</a>
+                <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+                <a href="#contato" data-i18n="nav.contact">Contato</a>
+
+                <button class="language-switcher" id="languageSwitcher" type="button" aria-label="Alterar idioma">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="currentLanguage">PT</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </nav>
+
+            <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+            <a href="#sobre" data-i18n="nav.about">Sobre</a>
+            <a href="#skills" data-i18n="nav.skills">Skills</a>
+            <a href="#servicos" data-i18n="nav.services">Serviços</a>
+            <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+            <a href="#contato" data-i18n="nav.contact">Contato</a>
+
+            <button class="mobile-language-switcher" id="mobileLanguageSwitcher" type="button">
+                <i class="fa-solid fa-globe"></i>
+                <span>Português / English</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-container">
+
+                <div class="profile-image-wrapper">
+                    <div class="profile-glow"></div>
+                    <div class="profile-ring"></div>
+                    <img src="Image/Foto_Jow_roxo.png" alt="Foto de Jonathan Ferreira" class="profile-image">
+                </div>
+
+                <h1 class="hero-name">
+                    Jonathan Ferreira <span class="cursor">|</span>
+                </h1>
+
+                <div class="hero-role">
+                    &lt;<span id="typingText">Desenvolvedor de Software Jr</span>/&gt;
+                </div>
+
+                <p class="hero-description" data-i18n="hero.description">
+                    Transformando ideias em experiências digitais, sistemas e soluções criativas.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jonathan-ferreira-perfil/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="mailto:jonathanferreira59565@gmail.com" aria-label="E-mail">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/5511985988400" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#projetos" class="button primary-button" data-i18n="hero.projects">
+                        <i class="fa-solid fa-code"></i>
+                        Ver meus projetos
+                    </a>
+
+                    <a href="#contato" class="button secondary-button" data-i18n="hero.contact">
+                        Entre em contato
+                    </a>
+
+                     <a href="Curriculo_JonathanAF.pdf" class="button secondary-button" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        Meu currículo
+                    </a>
+                </div>
+
+                <div class="terminal-menu">
+                    <a href="#sobre">
+                        <span class="terminal-icon"><i class="fa-regular fa-user"></i></span>
+                        <span data-i18n="hero.about">&gt;_ Sobre mim</span>
+                    </a>
+
+                    <a href="#skills">
+                        <span class="terminal-icon"><i class="fa-solid fa-code"></i></span>
+                        <span data-i18n="hero.skills">&gt;_ Minhas Skills</span>
+                    </a>
+
+                    <a href="#servicos">
+                        <span class="terminal-icon"><i class="fa-solid fa-terminal"></i></span>
+                        <span data-i18n="hero.services">&gt;_ Meus Serviços</span>
+                    </a>
+
+                    <a href="#projetos">
+                        <span class="terminal-icon"><i class="fa-regular fa-folder-open"></i></span>
+                        <span data-i18n="hero.project">&gt;_ Meus Projetos</span>
+                    </a>
+
+                    <a href="#contato">
+                        <span class="terminal-icon"><i class="fa-regular fa-paper-plane"></i></span>
+                        <span data-i18n="hero.contactMenu">&gt;_ Entre em Contato</span>
+                    </a>
+                </div>
+
+                <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+                    <div class="mouse"><span></span></div>
+                    <span class="scroll-arrow">↓</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="content-section">
+            <div class="section-container reveal">
+
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <span class="section-line"></span>
+                    <span class="section-label" data-i18n="about.label">SOBRE MIM</span>
+                </div>
+
+                <h2 data-i18n="about.title">
+                    Muito prazer, <span>Jonathan.</span>
+                </h2>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+                        <p data-i18n="about.text1">
+                            Sou profissional da área de tecnologia, apaixonado por desenvolvimento, inovação e criação de soluções digitais.
+                        </p>
+
+                        <p data-i18n="about.text2">
+                            Bacharelando em Ciência da Computação e Tecnólogo em Análise e Desenvolvimento de Sistemas.
+                        </p>
+
+                        <p data-i18n="about.text3">
+                            Minha trajetória une tecnologia, criatividade e educação. Gosto de transformar problemas em soluções práticas e experiências digitais interessantes.
+                        </p>
+
+                        <p data-i18n="about.text4">
+                            Atualmente venho ampliando meus conhecimentos em desenvolvimento de software, desenvolvimento web, banco de dados e novas tecnologias.
+                        </p>
+                    </div>
+
+                    <div class="about-terminal">
+                        <div class="terminal-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="terminal-content">
+                            <p><span class="terminal-green">jonathan@portfolio</span>:~$</p>
+                            <p>whoami</p>
+                            <p class="terminal-purple" data-i18n="about.terminalWhoami">Desenvolvedor & Criador</p>
+                            <p>cat objetivos.txt</p>
+                            <p class="terminal-purple" data-i18n="about.terminalObjective">Criar. Aprender. Evoluir.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="content-section">
+            <div class="section-container reveal">
+
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <span class="section-line"></span>
+                    <span class="section-label" data-i18n="skills.label">TECNOLOGIAS</span>
+                </div>
+
+                <h2 data-i18n="skills.title">
+                    Minhas <span>Skills</span>
+                </h2>
+
+                <div class="skills-grid" id="skillsGrid"></div>
+
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="content-section">
+            <div class="section-container reveal">
+
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <span class="section-line"></span>
+                    <span class="section-label" data-i18n="services.label">O QUE EU FAÇO</span>
+                </div>
+
+                <h2 data-i18n="services.title">
+                    Meus <span>Serviços</span>
+                </h2>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-number">01</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h3 data-i18n="services.webTitle">Desenvolvimento Web</h3>
+
+                        <p data-i18n="services.webDescription">
+                            Criação de sites modernos, responsivos, interativos e pensados para oferecer uma boa experiência ao usuário.
+                        </p>
+
+                        <div class="service-arrow">→</div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-number">02</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3 data-i18n="services.systemsTitle">Desenvolvimento de Sistemas</h3>
+
+                        <p data-i18n="services.systemsDescription">
+                            Desenvolvimento de soluções personalizadas para automatizar processos e resolver problemas específicos.
+                        </p>
+
+                        <div class="service-arrow">→</div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-number">03</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <h3 data-i18n="services.digitalTitle">Soluções Digitais</h3>
+
+                        <p data-i18n="services.digitalDescription">
+                            Transformação de ideias em projetos digitais funcionais, criativos e alinhados aos objetivos de cada projeto.
+                        </p>
+
+                        <div class="service-arrow">→</div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos" class="content-section">
+            <div class="section-container reveal">
+
+                <div class="section-heading">
+                    <span class="section-number">04</span>
+                    <span class="section-line"></span>
+                    <span class="section-label" data-i18n="projects.label">PORTFÓLIO</span>
+                </div>
+
+                <h2 data-i18n="projects.title">
+                    Meus <span>Projetos</span>
+                </h2>
+
+                <p class="section-description" data-i18n="projects.description">
+                    Alguns dos projetos que desenvolvi durante minha trajetória acadêmica e profissional.
+                </p>
+
+                <div class="project-filters" id="projectFilters"></div>
+
+                <div class="projects-grid" id="projectsGrid"></div>
+
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="content-section contact-section">
+            <div class="section-container reveal">
+
+                <div class="section-heading center-heading">
+                    <span class="section-number">05</span>
+                    <span class="section-line"></span>
+                    <span class="section-label" data-i18n="contact.label">CONTATO</span>
+                </div>
+
+                <h2 data-i18n="contact.title">
+                    Vamos criar algo <span>juntos?</span>
+                </h2>
+
+                <p class="contact-description" data-i18n="contact.description">
+                    Você tem alguma ideia, projeto ou vontade de realizar algo? Entre em contato comigo.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a href="mailto:jonathanferreira59565@gmail.com" class="button primary-button" data-i18n="contact.email">
+                        <i class="fa-regular fa-envelope"></i>
+                        Enviar e-mail
+                    </a>
+
+                    <a href="https://wa.me/5511985988400" target="_blank" rel="noopener noreferrer" class="button secondary-button" data-i18n="contact.whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+
+            <p>
+                © <span id="currentYear"></span>
+                <span class="footer-name">Jonathan Ferreira</span>
+                · <span class="footer-rights" data-i18n="footer.rights">Todos os direitos reservados.</span>
+            </p>
+
+            <p class="footer-code" data-i18n="footer.developed">
+                Desenvolvido com HTML · CSS · JavaScript
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
